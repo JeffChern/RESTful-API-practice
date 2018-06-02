@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+    <Folder Include="Models\" />
+    <Folder Include="Repository\" />
+    <Folder Include="Models\Appointments\" />
+    <Folder Include="Models\Patients\" />
+    <Folder Include="Models\Practice\" />
+    <Folder Include="Repository\Patients\" />
+    <Folder Include="Repository\Practice\" />
+    <Folder Include="Repository\Appointments\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="MongoDB.Driver" Version="2.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\Settings.cs" />
+    <Compile Remove="Controllers\ValuesController.cs" />
+    <Compile Remove="Models\EmptyInterface.cs" />
+    <Compile Remove="Repository\Iappointments.cs" />
+    <Compile Remove="Models\PatientContext.cs" />
+    <Compile Remove="Models\appointmentsContext_1.cs" />
+  </ItemGroup>
+</Project>
